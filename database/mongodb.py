@@ -28,8 +28,15 @@ def get_mongo_client() -> Optional[MongoClient]:
         return _client
 
     uri = os.getenv("MONGODB_URI")
+    if not uri:
+        try:
+            import streamlit as st
+            if hasattr(st, "secrets") and "MONGODB_URI" in st.secrets:
+                uri = str(st.secrets["MONGODB_URI"]).strip().strip("'\"")
+        except Exception:
+            pass
     if not uri or "mongodb" not in uri:
-        print("[MongoDB] Warning: MONGODB_URI is not configured in .env")
+        print("[MongoDB] Warning: MONGODB_URI is not configured in .env or secrets")
         return None
 
     try:
@@ -57,7 +64,16 @@ def get_database() -> Optional[Database]:
     if client is None:
         return None
 
-    db_name = os.getenv("MONGODB_DB_NAME", "promptcraft_db")
+    db_name = os.getenv("MONGODB_DB_NAME")
+    if not db_name:
+        try:
+            import streamlit as st
+            if hasattr(st, "secrets") and "MONGODB_DB_NAME" in st.secrets:
+                db_name = str(st.secrets["MONGODB_DB_NAME"]).strip().strip("'\"")
+        except Exception:
+            pass
+    if not db_name:
+        db_name = "promptcraft_db"
     _db = client[db_name]
     if not _indexes_created:
         _indexes_created = True

@@ -42,6 +42,15 @@ def _load_env_file():
                 if line and not line.startswith("#") and "=" in line:
                     key, val = line.split("=", 1)
                     os.environ[key.strip()] = val.strip().strip("'\"")
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets"):
+            for k in list(st.secrets.keys()):
+                v = st.secrets[k]
+                if isinstance(v, (str, int, float, bool)) and k not in os.environ:
+                    os.environ[k] = str(v).strip().strip("'\"")
+    except Exception:
+        pass
 
 _load_env_file()
 

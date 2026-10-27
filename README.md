@@ -1,12 +1,3 @@
----
-title: PromptCraft - AI Prompt Quality Evaluation & Learning System
-emoji: ⚡
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-pinned: false
----
-
 # ⚡ PromptCraft — Prompt Quality Evaluation & Learning System
 
 An intelligent AI prompt evaluation and optimization platform built with **Streamlit**, **Google Gemini**, and **NLP evaluation pipelines**.

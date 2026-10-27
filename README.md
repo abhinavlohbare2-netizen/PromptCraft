@@ -3,9 +3,7 @@ title: PromptCraft - AI Prompt Quality Evaluation & Learning System
 emoji: ⚡
 colorFrom: blue
 colorTo: indigo
-sdk: streamlit
-sdk_version: "1.30.0"
-app_file: app.py
+sdk: docker
 pinned: false
 ---
 

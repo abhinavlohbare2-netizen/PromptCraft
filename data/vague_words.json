@@ -1,0 +1,58 @@
+{
+  "description": "Weighted dictionary of ambiguous words, vague quantifiers, and underspecified phrases used for Ambiguity scoring.",
+  "levels": {
+    "level_1": {
+      "weight": 1,
+      "description": "Mild ambiguity (vague quantifiers and subjective adjectives)",
+      "terms": [
+        "some",
+        "several",
+        "appropriate",
+        "relevant",
+        "suitable",
+        "reasonable",
+        "various",
+        "many",
+        "few",
+        "a lot",
+        "stuff",
+        "things"
+      ]
+    },
+    "level_2": {
+      "weight": 2,
+      "description": "Moderate ambiguity (uncalibrated quality adverbs and adjectives)",
+      "terms": [
+        "detailed",
+        "briefly",
+        "properly",
+        "effectively",
+        "clearly",
+        "good",
+        "simple",
+        "quickly",
+        "nicely",
+        "standard",
+        "normal"
+      ]
+    },
+    "level_3": {
+      "weight": 3,
+      "description": "Strong ambiguity (unanchored generic command phrases)",
+      "terms": [
+        "make it better",
+        "explain it well",
+        "give a good answer",
+        "improve this",
+        "do it properly",
+        "best possible",
+        "as needed",
+        "write something good",
+        "fix everything",
+        "do what is right",
+        "make it sound professional",
+        "give me all details"
+      ]
+    }
+  }
+}

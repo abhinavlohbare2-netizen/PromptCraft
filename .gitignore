@@ -1,0 +1,31 @@
+# Virtual Environment
+PromptCraft1/
+venv/
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# User Secrets
+.env
+
+# Databases
+*.db
+*.sqlite3
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary Scratch & Artifacts
+scratch/
+.tempmediaStorage/
+*.log
+hs_err_pid*.log
+replay_pid*.log

@@ -1,0 +1,184 @@
+{
+  "demo@promptcraft.ai": {
+    "name": "Demo User",
+    "email": "demo@promptcraft.ai",
+    "password_hash": "c7e5e4ed1cc7ee6f83c25d87d91f1ef403de3f90b82b98f39ada5c1657ca918a",
+    "salt": "73874c9503a7214f06ff507077e910d6",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "demo@example.com": {
+    "name": "Demo User",
+    "email": "demo@example.com",
+    "password_hash": "6aedd69744bc7e88259088ffd4eb3e0c8372958931f4de9878bb3101133e6d2a",
+    "salt": "5b70aa14a4f9a25d5cdf80c91dea3078",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "test@example.com": {
+    "name": "Test User",
+    "email": "test@example.com",
+    "password_hash": "31c982475595bfcbc5008b5f50af54e984993dd7b229eec724e27b6cf12d66ee",
+    "salt": "5f378651acfbe37aada16ea3cf06a951",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "newuser999@example.com": {
+    "name": "Test User",
+    "email": "newuser999@example.com",
+    "password_hash": "f3653dbce59e9aea40e0e4e711675125dbb6848861c64c82d301761dbd35882a",
+    "salt": "5875f036a7f2531d067d1a37016c3e9b",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "newuser123@example.com": {
+    "name": "Test User",
+    "email": "newuser123@example.com",
+    "password_hash": "0db9bb6979561a70389528cb5d925a4551a80e74943a941c3bb441ca66e0cbb3",
+    "salt": "b0dd3e8ab53ec84ffa0d5251ceb92f57",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhinavlohbare2@gmail.com": {
+    "name": "Abhinav Lohbare",
+    "email": "abhinavlohbare2@gmail.com",
+    "password_hash": "d0c64dd4fed453ce550f37ed183961bf2c82dfc716ffd883328496d07d91dd8d",
+    "salt": "8f35dbeb80d8cd9303d5c782bb8581b2",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "test@promptcraft.com": {
+    "name": "Test User",
+    "email": "test@promptcraft.com",
+    "password_hash": "1cd71e59a050f1cec62608f94b18eaf3393a3a6727fe736c710a0391aaa6cbd9",
+    "salt": "ab032048b3345ae69f870bbd02ac0bcc",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "verify_test_user@promptcraft.ai": {
+    "name": "Test Verification",
+    "email": "verify_test_user@promptcraft.ai",
+    "password_hash": "4a2286f378f9b8088893b6e570c2a59f8ef6da919c9cdd356401af683707e6c9",
+    "salt": "4c0a0e0e43d3b39ffbb681c0e1bc1dfd",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "sandipganorkar@gmail.com": {
+    "name": "Sandeep Ganorkar",
+    "email": "sandipganorkar@gmail.com",
+    "password_hash": "107084d49bcb698feb2e2744f22545e7bbb5594c5511772c382295450841ac5e",
+    "salt": "0b948d5e1cc98e474347d15b525628e6",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "satyamamte@gmail.com": {
+    "name": "Satyam Amte",
+    "email": "satyamamte@gmail.com",
+    "password_hash": "c0ac5acbab4c0655c573d9d798e6a29d6d1fcda6c1e97b95928f1b621ccad508",
+    "salt": "dc7eb1ef021050a2feb9f3f8a1797d90",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhijeetk@gmail.com": {
+    "name": "Abhijeet K",
+    "email": "abhijeetk@gmail.com",
+    "password_hash": "dd4800cfd51f5b6a954d50b3ae6788c964b95acb089c3e68047dc49ca65dc98d",
+    "salt": "7e47eafe16fac2689d7088e52f76b61e",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "kishorlohbare@gmail.com": {
+    "name": "Kishor Lohbare",
+    "email": "kishorlohbare@gmail.com",
+    "password_hash": "2b7becef5de7a893d6ec155811c9eaf15aa480ad183024a8b3decdb8d4d2c9f7",
+    "salt": "7f8a4655aa5b3a81f01b9bc046e201e1",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "anuj@promptcraft.ai": {
+    "name": "Anuj",
+    "email": "anuj@promptcraft.ai",
+    "password_hash": "f12a7773ef42652a286b54983afc881ee6579e13b90ecb6908560476947426b8",
+    "salt": "52d04d2bbf2c02d6dbacf272db1821bf",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhinavtest2026@gmail.com": {
+    "name": "Abhinav Test",
+    "email": "abhinavtest2026@gmail.com",
+    "password_hash": "185fd8d05256528dae1e700d87c1778df1bc03bf28c0c258a642db71dea3b0e2",
+    "salt": "7a4e4e2c4477e175b3eab5a7234c4e08",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhinavtest2026_new@gmail.com": {
+    "name": "Abhinav Lohbare",
+    "email": "abhinavtest2026_new@gmail.com",
+    "password_hash": "fd49cf6f2b77a93bd5eafe71f7fbe56f3e458d2962f75f15466529edbca3fd58",
+    "salt": "f4a7a1cabe103e58dfdda8fb68285b3b",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhinavtest2026_999@gmail.com": {
+    "name": "Abhinav Lohbare",
+    "email": "abhinavtest2026_999@gmail.com",
+    "password_hash": "602f20a069452525be6dff8705f0d0a78d2bf9773d1c21db04a428f8df8e4726",
+    "salt": "d29adeb3563a9bf6fe80ddf9bee14733",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "ajaydevasti@gmail.com": {
+    "name": "Ajay Devasti",
+    "email": "ajaydevasti@gmail.com",
+    "password_hash": "2c488632614b63a0ae88fc0cf14d3da53cafc19e9e033cd9fce15a7056a37cd3",
+    "salt": "1defdff790520f4b37d41786b2b3cde0",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "ajaydevgan@gmail.com": {
+    "name": "Ajay Devgan",
+    "email": "ajaydevgan@gmail.com",
+    "password_hash": "39e35d7d3f09fd95b2f15aebe2e62fa560ca74c16d262a0485268f45f898050f",
+    "salt": "1856c8af43121589f0d7a5545f3fa5ae",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "abhijay@gmail.com": {
+    "name": "Abhijay",
+    "email": "abhijay@gmail.com",
+    "password_hash": "fa1c8ac01da04014115a4c99e53d04368944c732ed972c65fe76ead462a0b2fa",
+    "salt": "04d179a4da9d6619c146f15bb0ea3170",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "speedtest_1793125105@promptcraft.ai": {
+    "name": "Speed Test",
+    "email": "speedtest_1793125105@promptcraft.ai",
+    "password_hash": "b84abb06a90832274cbe5987962a5d7b4c271d0f0282ff0c7d5634abfe03cd45",
+    "salt": "0cd7f4491f2892d3da4f14b426d58a2c",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "speedtest_1793125222@promptcraft.ai": {
+    "name": "Speed Test",
+    "email": "speedtest_1793125222@promptcraft.ai",
+    "password_hash": "2b514665a9a5037928cae007f7188dcd0119c060c59b9fa00b912cae72a1aee0",
+    "salt": "a29a2651a9a5a6b2b9fb82597cd3f514",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "speedtest_1793125312@promptcraft.ai": {
+    "name": "Speed Test",
+    "email": "speedtest_1793125312@promptcraft.ai",
+    "password_hash": "4748b1b90b803fbe4a26308fc846c7607bdbb7993a0fde24f685cf00789c5167",
+    "salt": "3d679898e6b6e1c4d45c623b88065460",
+    "created_at": "2026-09-13T00:00:00Z"
+  },
+  "anujtarwade9@gmail.con": {
+    "name": "Anuj Tarwade",
+    "email": "anujtarwade9@gmail.con",
+    "password_hash": "dcbc7e69999749388367512756e76b737b1e885aa0bcc841a5a645ec09adad90",
+    "salt": "2cb9520fd28810749ceb64a2dc798eb4",
+    "created_at": "2026-10-13 06:09:15.699000"
+  },
+  "anujtarwade9@gmail.com": {
+    "name": "Anuj Tarwade",
+    "email": "anujtarwade9@gmail.com",
+    "password_hash": "c34a77cc82a22bf1a891f2f84d9c163170f81ce889a25bf3830459972b699b65",
+    "salt": "090897f9da89cfebaa58feffdae60bd6",
+    "created_at": "2026-10-14 04:08:38.240000"
+  },
+  "anujtarwade@gmail.com": {
+    "name": "Anuj",
+    "email": "anujtarwade@gmail.com",
+    "password_hash": "fb1e57170c6efbd099e2cae30f7dc6c80a7dbace35d2448f741473866dc3707b",
+    "salt": "6ff59e9e5ca40aa201d6d6980f8339b4",
+    "created_at": "2026-10-16 03:44:59.120000"
+  },
+  "anujtarwade99@gmail.com": {
+    "name": "Anuj Tarwade",
+    "email": "anujtarwade99@gmail.com",
+    "password_hash": "c94f3a1639f0d64d50bdf5819457cbf4135e515be15e13f37b42405a4bd94d99",
+    "salt": "3989c775b2c2b8b0a7a5b93f4b29db1e",
+    "created_at": "2026-10-27 14:52:04.948000"
+  }
+}

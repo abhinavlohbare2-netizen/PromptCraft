@@ -1,0 +1,50 @@
+[
+  {
+    "id": "code_python_func",
+    "category": "Coding & Tech",
+    "title": "Clean Python Function Implementation",
+    "description": "Guides the LLM to write modular, type-hinted, and error-handled Python code.",
+    "template": "Write a Python function to [describe specific task]. The function must accept [list parameters with types] and return [return type and description]. Include type hints, a Google-style docstring, robust input validation for [edge cases], and handle [specific exceptions]. Provide two runnable test examples showing typical and edge case outputs.",
+    "tags": ["python", "clean-code", "algorithms"]
+  },
+  {
+    "id": "code_bug_fix",
+    "category": "Coding & Tech",
+    "title": "Code Debugging & Optimization",
+    "description": "Structured format for diagnosing bugs and proposing optimized patches.",
+    "template": "Analyze the following [language] snippet: \n```[language]\n[paste code here]\n```\nIdentify the root cause of [describe unexpected behavior / error message]. Explain why the bug occurs in 2-3 bullet points, provide the corrected code snippet, and explain the time/space complexity before and after the fix.",
+    "tags": ["debugging", "optimization", "refactoring"]
+  },
+  {
+    "id": "edu_concept_breakdown",
+    "category": "Education & Teaching",
+    "title": "First-Principles Concept Explanation",
+    "description": "Explains complex ideas to a specified audience level with intuitive analogies.",
+    "template": "Explain the concept of [technical topic, e.g., Transformer Self-Attention] to a [target audience, e.g., 2nd-year CS undergraduate]. Structure the response into: 1. High-level intuition with a real-world analogy, 2. Step-by-step mathematical/architectural breakdown, 3. Practical application in modern AI, and 4. Common misconceptions. Keep the total length between 350-500 words.",
+    "tags": ["education", "concepts", "analogies"]
+  },
+  {
+    "id": "academic_summary",
+    "category": "Research & Academic",
+    "title": "Research Paper / Document Extraction",
+    "description": "Extracts methodologies, findings, and limitations from academic papers.",
+    "template": "Summarize the key findings of [research paper title / topic]. Organize the summary into four exact sections: 1. Core Problem & Objective, 2. Proposed Methodology / Architecture, 3. Key Quantitative Results (metrics, benchmarks), and 4. Stated Limitations. Use bullet points and maintain an objective, academic tone. Word limit: 300 words.",
+    "tags": ["research", "summarization", "literature-review"]
+  },
+  {
+    "id": "business_exec_email",
+    "category": "Business & Workplace",
+    "title": "Executive Project Status Update",
+    "description": "Constructs a concise, actionable email update for senior leadership.",
+    "template": "Draft a formal status update email to [Stakeholder, e.g., VP of Engineering] regarding [Project Name]. Highlight: 1. Major milestones achieved this week, 2. Key blockers requiring executive escalation ([describe blocker]), and 3. Next week's priority deliverables with deadlines. Maintain a concise, direct, and professional tone. Total length under 250 words.",
+    "tags": ["email", "leadership", "workplace"]
+  },
+  {
+    "id": "data_analysis_plan",
+    "category": "Data Science",
+    "title": "Exploratory Data Analysis (EDA) Plan",
+    "description": "Generates a complete EDA strategy for tabular or time-series datasets.",
+    "template": "Create a structured Exploratory Data Analysis (EDA) roadmap in Python (pandas, seaborn) for a dataset with columns: [list main columns] aiming to predict/analyze [target variable]. Specify: 1. Data cleaning & missing value strategies, 2. Univariate and bivariate distributions to plot, 3. Feature engineering ideas, and 4. Baseline modeling suggestions.",
+    "tags": ["data-science", "eda", "machine-learning"]
+  }
+]

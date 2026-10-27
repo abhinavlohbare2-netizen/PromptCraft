@@ -1,0 +1,3 @@
+default-jre-headless
+libgl1
+ffmpeg

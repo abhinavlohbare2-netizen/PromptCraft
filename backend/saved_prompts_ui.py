@@ -68,6 +68,11 @@ def toggle_like_saved_prompt(prompt_id: str, user_email: str) -> bool:
 
 
 
+@st.cache_data(ttl=30, show_spinner=False)
+def _fetch_cached_saved_prompts(email: str):
+    return get_user_saved_prompts(email)
+
+
 def render_saved_prompts_view(user_email: str):
     """Renders the Saved Prompts library view."""
     st.html("""
@@ -81,8 +86,8 @@ def render_saved_prompts_view(user_email: str):
     if "liked_saved_prompts" not in st.session_state:
         st.session_state.liked_saved_prompts = set()
 
-    # 1. Fetch saved prompts from MongoDB (with fallback to session_state)
-    db_saved = get_user_saved_prompts(user_email)
+    # 1. Fetch saved prompts from MongoDB (cached in RAM for instant 0ms switching)
+    db_saved = _fetch_cached_saved_prompts(user_email)
     
     # Merge with any session_state items if not in DB
     saved_list = db_saved

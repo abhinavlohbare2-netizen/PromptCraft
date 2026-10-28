@@ -107,6 +107,32 @@ html, body, [class*="css"] {
     background: transparent !important;
 }
 
+/* =========================================================================
+   ZERO-FLICKER & INSTANT SMOOTH TRANSITIONS
+   Completely eliminates screen dimming/fainting/ghosting during button clicks
+   ========================================================================= */
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewBlockContainer"],
+[data-testid="stMain"],
+div.block-container,
+[data-testid="stSidebar"] {
+    opacity: 1 !important;
+    transition: none !important;
+    animation: none !important;
+}
+
+.stApp[data-test-script-state="running"],
+[data-testid="stAppViewContainer"][data-test-script-state="running"] {
+    opacity: 1 !important;
+}
+
+/* Suppress all opacity drop transitions on running state */
+[data-test-script-state="running"] * {
+    transition: opacity 0s !important;
+}
+
+
 /* Spinner & Loading Status High-Contrast Clean Styling */
 div[data-testid="stSpinner"],
 .stSpinner,
@@ -2065,16 +2091,13 @@ with st.sidebar:
     with col_nav1:
         if st.button("⚡ Evaluate", key="nav_btn_eval", use_container_width=True, type="primary" if st.session_state.current_nav_view == "eval" else "secondary"):
             st.session_state.current_nav_view = "eval"
-            st.rerun()
     with col_nav2:
         if st.button("🕒 History", key="nav_btn_history", use_container_width=True, type="primary" if st.session_state.current_nav_view == "history" else "secondary"):
             st.session_state.current_nav_view = "history"
-            st.rerun()
     
     st.markdown("<div style='margin-top: 6px;'></div>", unsafe_allow_html=True)
     if st.button("💾 Saved Prompts", key="nav_btn_saved_prompts", use_container_width=True, type="primary" if st.session_state.current_nav_view == "saved_prompts" else "secondary"):
         st.session_state.current_nav_view = "saved_prompts"
-        st.rerun()
     st.html('</div>')
     
     st.html("""
@@ -2185,14 +2208,12 @@ with main_container:
         with tab_col1:
             if st.button("📝 Text Input", key="tab_btn_text", use_container_width=True, type="primary" if cur_tab == "text" else "secondary"):
                 st.session_state.active_prompt_tab = "text"
-                st.rerun()
         with tab_col2:
             if st.button("🖼️ Image Input", key="tab_btn_image", use_container_width=True, type="primary" if cur_tab == "image" else "secondary"):
                 st.session_state.active_prompt_tab = "image"
                 img_key = f"uploader_img_prompt_{st.session_state.get('image_session_id', 0)}"
                 if not st.session_state.get(img_key):
                     st.session_state.ocr_extracted_text = ""
-                st.rerun()
         with tab_col3:
             if st.button("🎙️ Live Voice", key="tab_btn_voice", use_container_width=True, type="primary" if cur_tab == "voice" else "secondary"):
                 st.session_state.active_prompt_tab = "voice"
@@ -2200,10 +2221,10 @@ with main_container:
                 if not st.session_state.get(voice_key):
                     st.session_state.voice_transcribed_text = ""
                     st.session_state.last_transcribed_audio_hash = None
-                st.rerun()
         st.html('</div>')
                 
         st.markdown("<div style='margin-bottom: 12px;'></div>", unsafe_allow_html=True)
+        cur_tab = st.session_state.active_prompt_tab
         
         # -------------------------------------------------------------
         # 1. TEXT INPUT VIEW
@@ -2592,7 +2613,6 @@ with main_container:
                 """)
                 if st.button(" ", key="btn_click_pdf", use_container_width=True):
                     st.session_state.ref_upload_tab = "pdf"
-                    st.rerun()
 
             with col_img:
                 is_i = (cur_tab == "image")
@@ -2616,7 +2636,6 @@ with main_container:
                 """)
                 if st.button(" ", key="btn_click_img", use_container_width=True):
                     st.session_state.ref_upload_tab = "image"
-                    st.rerun()
 
             with col_docx:
                 is_d = (cur_tab == "docx")
@@ -2640,9 +2659,9 @@ with main_container:
                 """)
                 if st.button(" ", key="btn_click_docx", use_container_width=True):
                     st.session_state.ref_upload_tab = "docx"
-                    st.rerun()
 
             st.markdown("<div style='margin-top: 14px;'></div>", unsafe_allow_html=True)
+            cur_tab = st.session_state.ref_upload_tab
             
             # ---------------------------------------------------------
             # Active File Uploader Dropzone

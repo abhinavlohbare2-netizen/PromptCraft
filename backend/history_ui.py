@@ -8,6 +8,16 @@ import streamlit as st
 from database.repositories import get_user_evaluations, get_user_statistics
 
 
+@st.cache_data(ttl=30, show_spinner=False)
+def _fetch_cached_stats(email: str):
+    return get_user_statistics(email)
+
+
+@st.cache_data(ttl=30, show_spinner=False)
+def _fetch_cached_evaluations(email: str, limit: int = 30):
+    return get_user_evaluations(email, limit=limit)
+
+
 def render_history_view(user_email: str):
     """Renders the user prompt history dashboard powered by MongoDB Atlas."""
     st.markdown("""
@@ -17,9 +27,9 @@ def render_history_view(user_email: str):
     </div>
     """, unsafe_allow_html=True)
 
-    # 1. Fetch live metrics from MongoDB Atlas
-    stats = get_user_statistics(user_email)
-    eval_list = get_user_evaluations(user_email, limit=30)
+    # 1. Fetch live metrics from MongoDB Atlas (cached in RAM for instant 0ms switching)
+    stats = _fetch_cached_stats(user_email)
+    eval_list = _fetch_cached_evaluations(user_email, limit=30)
 
     # 2. Stat Overview Cards
     total_evals = stats.get("total_prompts", len(eval_list))

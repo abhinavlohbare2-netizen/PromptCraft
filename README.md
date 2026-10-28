@@ -2,6 +2,12 @@
 
 An intelligent AI prompt evaluation and optimization platform built with **Streamlit**, **Google Gemini**, and **NLP evaluation pipelines**.
 
+---
+
+## 🌐 Live Website (Deployed)
+
+Access the live application directly in your browser:
+👉 **[https://promptcraft-pro.streamlit.app](https://promptcraft-pro.streamlit.app)**
 
 ---
 
